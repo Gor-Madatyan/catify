@@ -12,6 +12,7 @@
 .idea/**/dictionaries
 .idea/**/shelf
 catify-debug
+bsb.txt
 # AWS User-specific
 .idea/**/aws.xml
 

@@ -1,5 +1,7 @@
 #pragma once
 
+#define MAX_WORD_LENGTH 10
+
 // Handles printing of a word
 void print_word(char* word);
 
