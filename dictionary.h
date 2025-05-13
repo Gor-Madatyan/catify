@@ -1,12 +1,19 @@
 #pragma once
 
 typedef struct {
-    char* from;
-    char* to;
+    char *from;
+    char *to;
 } WordTranslateEntry;
 
-const WordTranslateEntry translate_table[] = {
+const WordTranslateEntry prefix_translate_table[] = {
     // Section I.A: Key Noun/Pronoun/Adjective/Adverb Changes
+    {"god", "tuna"},
+    {"mama", "meowmya"},
+    {"mom", "meowmya"},
+    {"mother", "meowmya"},
+    {"father", "pawpya"},
+    {"dad", "pawpya"},
+    {"when","wafn"},
     {"human", "hooman"},
     {"person", "hooman"}, // Using "hooman" as a general replacement
     {"people", "hoomans"}, // Added plural
@@ -72,7 +79,7 @@ const WordTranslateEntry translate_table[] = {
     {"what", "wut"},
     {"with", "wif"},
     {"of", "ov"},
-    {"for","fur"},
+    {"for", "fur"},
     // "your" -> "ur" (already listed above)
     {"sure", "shur"},
     {"friend", "fren"},
@@ -91,7 +98,12 @@ const WordTranslateEntry translate_table[] = {
     {"today", "todayz"},
     {"why", "wai"},
     //word starters
-    {"per","purr"},
+    {"per", "purr"},
     // Terminator for the array
+    {nullptr, nullptr}
+};
+
+const WordTranslateEntry postfix_translate_table[] = {
+    {"s", "z"},
     {nullptr, nullptr}
 };

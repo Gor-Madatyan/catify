@@ -1,6 +1,4 @@
 #pragma once
-#include <stdio.h>
-#include <string.h>
 
 // Handles printing of a word
 void print_word(char* word);
@@ -13,3 +11,9 @@ void transform_word(char* transformed_word, const char* word);
 
 // normalizes some exceptions in the English, so analyzing it can be easier
 void normalize(char* str1, const char* str2);
+
+//handle postfixes such as s and convert them to more cat like
+char *translate_postfix(const char *str);
+
+// transforms postfix
+void transform_postfix(char *word);

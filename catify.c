@@ -1,5 +1,6 @@
 #include "utils.h"
 #include "catify.h"
+#include <string.h>
 
 void catify(char *str1, const char *str2) {
     transform_word(str1, str2);
@@ -8,6 +9,7 @@ void catify(char *str1, const char *str2) {
         normalize(normalized_word, str2);
         transform_word(str1, normalized_word);
     }
+    transform_postfix(str1);
 }
 
 void catify_words(char **words, const StringProcessor processor) {
