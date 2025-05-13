@@ -3,4 +3,5 @@ project(catify C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(catify main.c)
+add_executable(catify main.c
+        dictionary.h)

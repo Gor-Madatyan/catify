@@ -1,2 +1,2 @@
 # catify
-CLI tool to catify english text
+CLI tool to catify English text
