@@ -72,6 +72,7 @@ const WordTranslateEntry translate_table[] = {
     {"what", "wut"},
     {"with", "wif"},
     {"of", "ov"},
+    {"for","fur"},
     // "your" -> "ur" (already listed above)
     {"sure", "shur"},
     {"friend", "fren"},
